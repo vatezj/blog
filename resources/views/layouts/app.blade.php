@@ -27,6 +27,16 @@
                 'github_username' => isset($github_username) ? $github_username :  '',
         ]); ?>
     </script>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3e2ccb6ba079d5d25c5701c27f29f297";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
     @include('widget.google_analytics')
 </head>
 <body id="body">
