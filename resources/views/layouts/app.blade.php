@@ -15,6 +15,8 @@
     <meta name="theme-color" content="#52768e">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flat-top.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
     @if(isset($site_css) && $site_css)
         <link href="{{ $site_css }}" rel="stylesheet">
     @else

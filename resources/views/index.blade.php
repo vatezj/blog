@@ -1,7 +1,7 @@
 @extends('layouts.plain')
 @section('content')
     <div id="particles" class="home-color-bg"></div>
-    <div class="home-box">
+    <div class="home-box" style="height: 279px;">
         <h2 title="{{ $site_title or 'title' }}" style="margin: 0;">
             {{ $site_title or '我的个人博客' }}
             <a aria-hidden="true" href="{{ route('post.index') }}">
@@ -29,6 +29,15 @@
                 </a>
             @endforeach
         </p>
+
+	<p class="links">
+            <font aria-hidden="true" title="友情链接">»</font>
+	     <a href="http://www.lovchun.com/" target="_blank"
+                   aria-label="{{ $author or 'author' }} 的 {{ ucfirst($key) }} 地址" title="lovchun" style="vertical-align: middle;">
+                    <img src="http://ontzi4vtc.bkt.clouddn.com/image/TLM3YDII1m4mx83zcNqST1BygO7cocWveahrRtD6.png" style="width:24px;">
+             </a>
+        </p>
+
     </div>
 @endsection
 
