@@ -14,6 +14,7 @@
         <p class="links">
             <font aria-hidden="true">»</font>
             <a href="{{ route('post.index') }}" aria-label="点击查看博客文章列表">博客</a>
+            <font aria-hidden="true">»</font>
             <a href="about" aria-label="点击查看博客文章列表">关于</a>
             @foreach($pages as $page)
                 <font aria-hidden="true">/</font><a href="{{ route('page.show',$page->name) }}"
